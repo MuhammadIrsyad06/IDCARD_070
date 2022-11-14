@@ -28,7 +28,7 @@ public class controller {
                             @RequestParam("born") @DateTimeFormat(pattern="yyyy-MM-dd") Date date,
                             Model model, @RequestParam("image")MultipartFile file) throws IOException
     {
-       SimpleDateFormat born=new SimpleDateFormat("EEEE,dd-MMMM-yyyy");
+       SimpleDateFormat born=new SimpleDateFormat("EEEE, dd-MMMM-yyyy");
        String newTanggal=born.format(date);
        
        String blob=Base64.encodeBase64String(file.getBytes());

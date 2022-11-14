@@ -6,11 +6,36 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Data KTP Mahasiswa TI</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            fieldset{
+                max-width: 750px;
+                margin: auto;
+                box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2); 
+                text-align: center;
+            }
+            h3{
+                text-align: center;
+            }
+            a{
+                text-align: center;
+            }
+            img{
+                height: 300px;
+                width: 250px;
+                align-content: center;
+            }
+
+        </style>
     </head>
     <body>
-        <div>TODO write content</div>
+        <fieldset>
+            <h3>KTP Muhammad Irsyad</h3>
+            <a>Nama Lengkap: </a> <a th:text="${nm}"></a><br>
+            <a>Tanggal Lahir: </a> <a th:text="${brn}"></a><br><!-- comment -->
+            <img th:src="${img}" align="right"/>
+        </fieldset>
     </body>
 </html>
