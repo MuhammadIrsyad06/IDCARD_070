@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Data KTP Mahasiswa TI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h3{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>KTP Mahasiswa TI B</h3>
+        <hr/>
+         <form action="/getData" method="post" enctype="multipart/form-data">
+                Masukkan Nama: <input type="text" name="name"><br><br>
+                Tanggal Lahir:<input type="date" name="born"><br><br>
+                Foto diri: <input type="file" name="image"  accept="image/png, image/jpg"/><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+    </body>
+</html>
